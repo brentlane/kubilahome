@@ -5,7 +5,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #333333;
-    background-color: #333333;
+    background-color: #222222;
 }
 
 .navbar{
@@ -39,8 +39,17 @@ body {
     Xpadding: 40px 0 20px 0;
 }
 
+.placard, .contenthome {
+    padding-left: 20px;
+}
+
 .placard .intro-normal {
     padding: 10px 60px;
+}
+
+.kubila-image {
+    margin-top: 20px;
+    float:left;
 }
 
 
@@ -51,7 +60,7 @@ body {
 }
 
 .intro-massive p {
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 200;
     line-height: 1.25;
 }
@@ -81,12 +90,12 @@ body {
 
 .contenthome{
     height: 350px;
-    background: #DDDDDD; /* Old browsers */
+    background: #5e5e5e;
 }
 
 .contentinner{
     height: 400px;
-    background: #DDDDDD; /* Old browsers */
+    background: #DDDDDD;
     padding-top: 50px;
     padding-left: 30px
 }
@@ -99,7 +108,7 @@ body {
 footer{
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid #e5e5e5;
+    Xborder-top: 1px solid #e5e5e5;
 }
 
 @media (max-width: 767px) {

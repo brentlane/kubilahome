@@ -14,16 +14,20 @@
 
 <body ng-controller="OuterController">
 
-<ng-include src="'partials/placard.html'"></ng-include>
+<div class="neato">
 
-<div ng-view></div>
+    <ng-include src="'partials/placard.html'"></ng-include>
 
-<ng-include ng-include src="'partials/footer.html'"></ng-include>
+    <div ng-view></div>
+
+    <ng-include ng-include src="'partials/footer.html'"></ng-include>
 
 
-<script src="components/angular/angular.js"></script>
-<script src="js/app.js"></script>
-<script src="js/outer.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/outer.js"></script>
+
+</div>
 
 </body>
 </html>
