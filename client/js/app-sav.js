@@ -25,7 +25,7 @@ var myApp = angular.module('myApp', ['myApp.values', 'myApp.directives']).
                 }]}
         });
         $routeProvider.when('/neato', {
-            templateUrl: 'partials/team.html',
+            templateUrl: 'partials/about.html',
             resolve: {
                 resolvePage : ['PageConfigResolver', function(PageConfigResolver) {
                     var result = {

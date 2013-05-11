@@ -24,8 +24,8 @@ var myApp = angular.module('myApp', ['myApp.values', 'myApp.directives']).
                     PageConfigResolver.resolved(result);
                 }]}
         });
-        $routeProvider.when('/team', {
-            templateUrl: 'partials/team.html',
+        $routeProvider.when('/about', {
+            templateUrl: 'partials/about.html',
             resolve: {
                 resolvePage : ['PageConfigResolver', function(PageConfigResolver) {
                     var result = {
