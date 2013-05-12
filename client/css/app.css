@@ -20,15 +20,19 @@ body {
 
 /* Common color and text scheme */
 .placard, footer {
-    color: #FFF;
-    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
     background: #020031; /* Old browsers */
     background: -moz-linear-gradient(45deg,  #020031 0%, #6d3353 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
-    background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */ }
+    background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
+}
+
+.placard, footer, .contenthome {
+    color: #FFF;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
 
 .placard{
     padding: 20px 10px 30px 10px;
@@ -36,7 +40,6 @@ body {
 }
 .placard .intro-massive {
     position: relative;
-    Xpadding: 40px 0 20px 0;
 }
 
 .placard, .contenthome {
@@ -47,9 +50,42 @@ body {
     padding: 10px 60px;
 }
 
-.kubila-image {
+.kubila-content {
     margin-top: 20px;
-    float:left;
+}
+
+.kubila-content a{
+    color: #2f96b4;
+}
+
+.kubila-content a:hover{
+    color: #EEEEEE;
+}
+
+.kbt-item{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 250px;
+    position: relative;
+}
+
+.kbt-item img{
+    height: 250px;
+    margin-right: 30px;
+}
+
+.kbt-item .contact{
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+}
+
+.kbt-item p{
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
 }
 
 
@@ -108,10 +144,24 @@ body {
 footer{
     text-align: center;
     padding: 20px 0;
-    Xborder-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+    .kbt-item p{
+        font-size: 22px;
+        letter-spacing: 1.0px;
+    }
 }
 
 @media (max-width: 767px) {
+
+
+    .kbt-item p{
+        font-size: 18px;
+        letter-spacing: 1.0px;
+    }
+
     /* Remove any padding from the body */
     body {
         padding-top: 0;
