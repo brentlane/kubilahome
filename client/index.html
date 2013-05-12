@@ -1,8 +1,6 @@
 <!doctype html>
-<!--
-<html lang="en" ng-app="myApp">
--->
-<html lang="en" ng-app="myApp">
+
+<html lang="en" id="ng-app" ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <title>The Kubila Team - Build Invent Awesome</title>
@@ -16,11 +14,11 @@
 
 <div class="neato">
 
-    <div ng-include src="'partials/placard.html'"></div>
+    <div data-ng-include src="'partials/placard.html'"></div>
 
     <div ng-view></div>
 
-    <div ng-include ng-include src="'partials/footer.html'"></div>
+    <div data-ng-include src="'partials/footer.html'"></div>
 
 
     <script src="components/angular/angular.js"></script>
