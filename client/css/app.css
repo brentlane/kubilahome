@@ -159,11 +159,6 @@ footer{
 
 @media (min-width: 768px) and (max-width: 979px)
 {
-
-    .container{
-        width: 770px
-    }
-
     .kbt-item p{
         font-size: 22px;
         letter-spacing: 1.0px;

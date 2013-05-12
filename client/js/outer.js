@@ -25,7 +25,7 @@ myApp.controller('OuterController', ['$scope', 'PageConfigResolver',
     function outerController($scope, PageConfigResolver){
 
     $scope.configs = {};
-    $scope.configs['header'] = { size: {value:'massive', default:'massive'} };
+    $scope.configs['header'] = { size: {value:'massive', fallback:'massive'} };
     //  $scope.configs['menubar'] = { visible: {value: true, default: true} };
 
     $scope.configParams = function(configs){
@@ -37,7 +37,7 @@ myApp.controller('OuterController', ['$scope', 'PageConfigResolver',
             // modify the individual values
             for(var attr in configs[category]){
                 if($scope.configs[category][attr] == null){
-                    $scope.configs[category][attr] = {value:null, default:''};
+                    $scope.configs[category][attr] = {value:null, fallback:''};
                 }
                 $scope.configs[category][attr].value = configs[category][attr];
             }
