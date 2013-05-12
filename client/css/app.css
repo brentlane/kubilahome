@@ -83,7 +83,7 @@ body {
 
 .kbt-item img{
     height: 250px;
-    width: 180;
+    width: 180px;
     margin-right: 30px;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .contenthome{
-    heightX: 340px;
+    background: #3e3e3e;
     background: #3e3e3e;
     padding-bottom: 30px;
 }
@@ -195,7 +195,7 @@ footer{
 
     .kbt-item img{
         height: 200px;
-        width: 144;
+        width: 144px;
         margin-right: 20px;
     }
 
