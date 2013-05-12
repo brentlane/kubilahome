@@ -1,7 +1,7 @@
-<ng-include src="'partials/menubar.html'"></ng-include>
+<div data-ng-include src="'partials/menubar.html'"></div>
 
 <div class="placard">
-    <div ng-show="configs.header.format.value=='welcome'"
+    <div data-ng-show="configs.header.format.value=='welcome'"
          class="intro-massive container">
         <h1>KubilaTeam</h1>
         <div class="placard-text">
@@ -9,14 +9,14 @@
             <h3></h3>
         </div>
     </div>
-    <div ng-show="configs.header.format.value=='style1'"
+    <div data-ng-show="configs.header.format.value=='style1'"
          class="intro-normal">
         <div class="placard-text">
             <h1>KubilaTeam</h1>
             <p>People who love to build software products</p>
         </div>
     </div>
-    <div ng-show="configs.header.format.value=='style2'"
+    <div data-ng-show="configs.header.format.value=='style2'"
          class="intro-normal">
         <div class="placard-text">
             <h1>KubilaTeam</h1>
