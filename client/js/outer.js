@@ -22,7 +22,7 @@ myApp.factory('PageConfigResolver', ['$rootScope', function($rootScope) {
 
 
 myApp.controller('OuterController', ['$scope', 'PageConfigResolver',
-    function outerController($scope, PageConfigResolver){
+    function($scope, PageConfigResolver){
 
     $scope.configs = {};
     $scope.configs['header'] = { size: {value:'massive', fallback:'massive'} };
