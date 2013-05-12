@@ -15,22 +15,28 @@ body {
 
 .navbar .brand{
     float:right;
-    color: #6d3353;
+    color: #034f8c;
 }
 
 /* Common color and text scheme */
-.placard, footer {
+.old-background-gradient {
     background: #020031; /* Old browsers */
     background: -moz-linear-gradient(45deg,  #052a50ff 0%, #6d3353 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
-    Xbackground: linear-gradient(45deg,  #062544 0%,#034f8c 100%); /* W3C */
+    background: linear-gradient(45deg,  #062544 0%,#034f8c 100%); /* W3C */
 }
 
 .placard, footer {
-    background: linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* FF3.6+ */
+    background: #034f8c; /* Old browsers */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#00162d), color-stop(100%,#034f8c)); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* IE10+ */
+    background: linear-gradient(45deg, #00162d 0%, #034f8c 100%); /* W3C */
 }
 
 .placard, footer, .contenthome {
@@ -75,6 +81,7 @@ body {
 
 .kbt-item img{
     height: 250px;
+    width: auto;
     margin-right: 30px;
 }
 
@@ -152,10 +159,24 @@ footer{
 
 @media (min-width: 768px) and (max-width: 979px)
 {
+
+    .container{
+        width: 770px
+    }
+
     .kbt-item p{
         font-size: 22px;
         letter-spacing: 1.0px;
     }
+
+    .intro-massive h1 {
+        font-size: 90px;
+    }
+
+    .intro-massive p {
+        font-size: 42px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -176,10 +197,23 @@ footer{
         margin-topX:   -20px;
 
     }
+
+    .intro-massive h1 {
+        font-size: 72px;
+    }
+
+    .intro-massive p {
+        font-size: 36px;
+    }
+
     .intro-normal h1 {
         font-size: 60px;
     }
     .intro-normal p {
+        font-size: 18px;
+    }
+
+    .contentinner p{
         font-size: 18px;
     }
 
