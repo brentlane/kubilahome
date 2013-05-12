@@ -48,8 +48,7 @@ body {
 }
 
 .placard{
-    padding: 20px 10px 30px 10px;
-    margin-bottom: -30px; /* why is this needed, go figure... */
+    padding: 20px 10px 20px 10px;
 }
 .placard .intro-massive {
     position: relative;
@@ -64,7 +63,7 @@ body {
 }
 
 .kubila-content {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .kubila-content a{
@@ -84,7 +83,7 @@ body {
 
 .kbt-item img{
     height: 250px;
-    width: auto;
+    width: 180;
     margin-right: 30px;
 }
 
@@ -139,8 +138,9 @@ body {
 }
 
 .contenthome{
-    height: 350px;
+    heightX: 340px;
     background: #3e3e3e;
+    padding-bottom: 30px;
 }
 
 .contentinner{
@@ -157,7 +157,7 @@ body {
 
 footer{
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 @media (min-width: 768px) and (max-width: 979px)
@@ -180,9 +180,23 @@ footer{
 @media (max-width: 767px) {
 
 
+    .contenthomeX{
+        height: 280px;
+    }
+
     .kbt-item p{
         font-size: 18px;
         letter-spacing: 1.0px;
+    }
+
+    .kbt-item{
+        min-height: 200px;
+    }
+
+    .kbt-item img{
+        height: 200px;
+        width: 144;
+        margin-right: 20px;
     }
 
     /* Remove any padding from the body */
@@ -191,9 +205,7 @@ footer{
     }
 
     .placard {
-        padding: 20px 20px;
-        margin-topX:   -20px;
-
+        padding: 10px 10px;
     }
 
     .intro-massive h1 {
@@ -213,6 +225,10 @@ footer{
 
     .contentinner p{
         font-size: 18px;
+    }
+
+    footer{
+        padding: 20px 0;
     }
 
 
