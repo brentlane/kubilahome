@@ -48,7 +48,10 @@ body {
 }
 
 .placard{
-    padding: 20px 10px 60px 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .placard .intro-massive {
     position: relative;
@@ -56,6 +59,7 @@ body {
 
 .placard, .contenthome {
     padding-left: 20px;
+    paddint-top:40px;
 }
 
 .placard .intro-normal {
@@ -145,7 +149,6 @@ body {
 
 .contenthome{
     background: #2b2b2b;
-    padding-top: 40px;
     padding-bottom: 30px;
     height:350px;
 }
@@ -169,6 +172,11 @@ footer{
 
 @media (min-width: 768px) and (max-width: 979px)
 {
+    .placard{
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
     .kbt-item p{
         font-size: 22px;
         letter-spacing: 1.0px;
@@ -186,9 +194,9 @@ footer{
 
 @media (max-width: 767px) {
 
-
-    .contenthomeX{
-        height: 280px;
+    .placard{
+        padding-top: 10px;
+        padding-bottom: 50px;
     }
 
     .kbt-item p{
@@ -211,8 +219,9 @@ footer{
         padding-top: 0;
     }
 
-    .placard {
-        padding: 10px 10px;
+    .placard{
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     .intro-massive h1 {
