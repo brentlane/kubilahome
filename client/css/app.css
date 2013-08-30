@@ -83,6 +83,10 @@ body {
     vertical-align: top;
     min-height: 210px;
     position: relative;
+
+    /* needed for IE-7 support */
+    *display: inline;
+    zoom: 1;
 }
 
 .kbt-itemXXX img{
