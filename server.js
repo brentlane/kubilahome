@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var routes = require('./serverRoutes.js');
 var express = require ('express');
 var app = express();
 
@@ -16,6 +17,10 @@ app.use(function(req, res, next){
 
 // static files
 app.use(express.static(__dirname + '/client') );
+
+app.get('/brassops',routes.redirectBrassOps);
+
+app.get('/pingme',routes.pingme);
 
 // heroku will set PORT env
 app.listen(process.env.PORT || 3009, function(){
